@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>謎の財産</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <!-- <div class="myDIV">Hover over me.</div>
+    <div class="hide">I am shown when someone hovers over the div above.</div> -->
+    <table class="map">
+        <tr height="300px">
+            <td rowspan="2" width="75%">
+                <h4>マップ</h4>
+            </td>
+            <td class="image">
+                <img src="dining.png" class="backimage" width="100%">
+            </td>
+        </tr>
+        <tr height="300px">
+            <td>
+                <h4>ログ</h4>
+                <p id="describe"></p>
+            </td>
+        </tr>
+    </table>
+
+    <div class="dialogue" id="question">
+        <p id="paragraph">設定：あなたは探偵…</p>
+        <button id="toAnswer" onclick="answerDialouge()">進む＞</button>
+    </div>
+
+    <div class="dialogue" id="answer">
+        <p>犯人は？</p>
+        <form id="answerForm" name="answerForm" method="post">
+            <label><input type="radio" name="finalAnswer" value="a">Aさん</label>
+            <label><input type="radio" name="finalAnswer" value="b">Bさん</label>
+            <label><input type="radio" name="finalAnswer" value="c">Cさん</label>
+            <label><input type="radio" name="finalAnswer" value="d">Dさん</label>
+            <br>
+            <input type="submit" value="確認">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
