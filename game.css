@@ -40,3 +40,8 @@
 .backimage {
     border-radius: 25px;
 }
+
+#toAnswer {
+    margin: auto;
+    display: none;
+}

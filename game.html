@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <title>謎の財産</title>
+    <title>Arthur's mysterious death</title>
     <link rel="stylesheet" href="game.css">
 </head>
 
@@ -37,19 +37,30 @@
                             <img src="book.png" height="200px" id="book" onclick="bookDialogue()">
                         </td>
                         <td>
-                            <img src="clock.png" height="200px" id="clock" onclick="clockDialogue()">
+                            <img src="clock.png" height="200px" id="clock" onclick="clockDialogue()"
+                                style="display: none;">
                         </td>
                         <td>
-                            <img src="doku.png" height="200px" id="doku" onclick="dokuDialogue()">
+                            <img src="doku.png" height="200px" id="doku" onclick="dokuDialogue()" style="display: none;"
+                                s>
                         </td>
                         <td>
                             <img src="knife.png" height="200px" id="knife" onclick="knifeDialogue()">
                         </td>
                     </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div id="toAnswer">
+                                <button onclick="answerDialouge()">全体会話</button>
+                                &emsp;
+                                <button onclick="showHint()" id="hint">ヒント</button>
+                            </div>
+                        </td>
+                    </tr>
                 </table>
             </td>
             <td class="image">
-                <img src="dining.png" class="backimage" width="100%">
+                <img src="reading.png" class="backimage" width="100%">
             </td>
         </tr>
         <tr height="300px">
@@ -65,7 +76,6 @@
             <br>期日よりも早く屋敷に着いたが、朝から主人である富豪のアーサー・ウィンスローの姿がない。屋敷を探すとアーサーが書斎で死んでいるのを発見した。来客者はビジネスパートナーのリチャードしかいない。
             <br>早朝からのひどい雪で警察は来れないようだ。そこで死因を解明するため屋敷にいる人たちに応接間に集まってもらった。
         </p>
-        <button id="toAnswer" onclick="answerDialouge()">進む＞</button>
     </div>
 
     <div class="dialogue" id="answer">
