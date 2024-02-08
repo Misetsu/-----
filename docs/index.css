@@ -9,3 +9,14 @@
     margin: auto;
     text-decoration: none;
 }
+
+.manual {
+    text-align: center;
+    display: block;
+}
+
+#bbb {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
