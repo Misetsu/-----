@@ -11,8 +11,42 @@
     <div class="hide">I am shown when someone hovers over the div above.</div> -->
     <table class="map">
         <tr height="300px">
-            <td rowspan="2" width="75%">
+            <td rowspan="2" width="30%">
                 <h4>マップ</h4>
+                <img src="map.jpg" height="90%">
+            </td>
+            <td rowspan="2" width="45%">
+                <h4>人物/証拠品</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="businessman.png" height="200px" id="businessman" onclick="businessmanDialogue()">
+                        </td>
+                        <td>
+                            <img src="secretary.png" height="200px" id="secretary" onclick="secretaryDialogue()">
+                        </td>
+                        <td>
+                            <img src="son.png" height="200px" id="son" onclick="sonDialogue()">
+                        </td>
+                        <td>
+                            <img src="wife.png" height="200px" id="wife" onclick="wifeDialogue()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="book.png" height="200px" id="book" onclick="bookDialogue()">
+                        </td>
+                        <td>
+                            <img src="clock.png" height="200px" id="clock" onclick="clockDialogue()">
+                        </td>
+                        <td>
+                            <img src="doku.png" height="200px" id="doku" onclick="dokuDialogue()">
+                        </td>
+                        <td>
+                            <img src="knife.png" height="200px" id="knife" onclick="knifeDialogue()">
+                        </td>
+                    </tr>
+                </table>
             </td>
             <td class="image">
                 <img src="dining.png" class="backimage" width="100%">
@@ -27,17 +61,23 @@
     </table>
 
     <div class="dialogue" id="question">
-        <p id="paragraph">設定：あなたは探偵…</p>
+        <p id="paragraph">探偵であるあなたはアーサー・ウィンスローから屋敷への招待を受けていた。
+            <br>期日よりも早く屋敷に着いたが、朝から主人である富豪のアーサー・ウィンスローの姿がない。屋敷を探すとアーサーが書斎で死んでいるのを発見した。来客者はビジネスパートナーのリチャードしかいない。
+            <br>早朝からのひどい雪で警察は来れないようだ。そこで死因を解明するため屋敷にいる人たちに応接間に集まってもらった。
+        </p>
         <button id="toAnswer" onclick="answerDialouge()">進む＞</button>
     </div>
 
     <div class="dialogue" id="answer">
         <p>犯人は？</p>
         <form id="answerForm" name="answerForm" method="post">
-            <label><input type="radio" name="finalAnswer" value="a">Aさん</label>
-            <label><input type="radio" name="finalAnswer" value="b">Bさん</label>
-            <label><input type="radio" name="finalAnswer" value="c">Cさん</label>
-            <label><input type="radio" name="finalAnswer" value="d">Dさん</label>
+            <label><input type="radio" name="finalAnswer" value="a">リチャードさん</label>
+            &emsp;
+            <label><input type="radio" name="finalAnswer" value="b">バーバラさん</label>
+            &emsp;
+            <label><input type="radio" name="finalAnswer" value="c">ヴィクターさん</label>
+            &emsp;
+            <label><input type="radio" name="finalAnswer" value="d">エレノアさん</label>
             <br>
             <input type="submit" value="確認">
         </form>
